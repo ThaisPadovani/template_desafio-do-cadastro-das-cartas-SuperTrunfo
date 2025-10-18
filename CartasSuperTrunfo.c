@@ -1,14 +1,78 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das cartas
-// Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
+// Desafio Super Trunfo
 
 int main() {
-  // Área para definição das variáveis para armazenar as propriedades das cidades
 
-  // Área para entrada de dados
+  // === Variáveis CARTA 1 === //
 
+  char estado1[3];
+  char codigocarta1[30];
+  char nomecidade1[30];
+  unsigned long int populacao1;
+  float areakm2_1;
+  float pib1;
+  int pontosturisticos1;
+  float densidadepopulacional1;
+  float pibpercapta1;
+  float superpoder1;
+
+    // === Variáveis Carta 2 === //
+
+  char estado2[3];
+  char codigocarta2[30];
+  char nomecidade2[30];
+  unsigned long int populacao2;
+  float areakm2_2;
+  float pib2;
+  int pontosturisticos2;
+  float densidadepopulacional2;
+  float pibpercapta2;
+  float superpoder2;
+
+  // CARTA 1
+
+  printf(" ***DADOS CARTA 1 *** \n");
+
+  printf("Digite o Estado (sigla): \n");
+  scanf(" %s", estado1);
+
+  printf("Digite o código da carta: \n");
+  scanf(" %s", codigocarta1);
+
+  printf("Digite o nome da cidade: \n");
+  scanf(" %s", nomecidade1);
+
+  printf("Digite a população: \n");
+  scanf(" %lu", &populacao1);
+
+  printf("Digite a área km2: \n");
+  scanf(" %f", &areakm2_1);
+
+  printf("Digite o PIB: \n");
+  scanf(" %f", &pib1);
+
+  printf("Digite o número de pontos turísticos: \n");
+  scanf(" %d", &pontosturisticos1);
+
+  printf("Digite a densidade populacional: \n");
+  scanf(" %f", &densidadepopulacional1);
+
+  printf("Digite o PIB per capita: \n");
+  scanf(" %f", &pibpercapta1);
+
+  printf("Digite o Super Poder: \n");
+  scanf(" %f", &superpoder1);
+
+  // --- Cálculos Automáticos ---
+
+  densidadepopulacional1 = populacao1 / areakm2_1;
+  pibpercapta1 = pib1 / populacao1;
+
+  // CARTA 2
+
+
+ 
   // Área para exibição dos dados da cidade
 
 return 0;
